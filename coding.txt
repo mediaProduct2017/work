@@ -1,0 +1,86 @@
+export PATH=/home/deco/local/cuda-8.0/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/home/deco/local/cuda-8.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+在pycharm中，ctrl+? 相当于#
+
+pip install -r requirements.txt -i https://pypi.mirrors.ustc.edu.cn/simple
+
+pip install django_modeltranslation==0.4.0-beta2
+
+pip install tensorflow-gpu==1.1 -i https://pypi.mirrors.ustc.edu.cn/simple
+
+tar -cvf corpus.tar *.txt
+tar -xvf corpus.tar
+
+nohup my_command > my.log 2>&1 &
+echo $! > save_pid.txt
+kill -9 `cat save_pid.txt`
+rm save_pid.txt
+
+ps -ef |grep nohup
+kill -9 1787 787
+
+按向右箭头，完成pycharm的插入状态和覆盖状态的切换
+重启pycharm也可以
+
+ps -p 148048 -o comm=
+148048 is a pid
+
+tar zxvf FileName.tar.gz
+
+unzip file
+
+在pycharm中，小键盘中的0/lns可以改变光标的形状
+
+killall chrome
+
+chrome://restart
+
+pycharm: 
+ctrl+k: commit changes, to do
+
+To run a command as administrator (user "root"), use "sudo <command>".
+
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+cd /usr/local/cuda-8.0/samples/1_Utilities/deviceQuery
+
+sudo make
+
+./deviceQuery
+
+nvcc --version
+
+nvidia-smi
+
+tar -xzvf cudnn-8.0-linux-x64-v5.1.tgz
+sudo cp cuda/include/cudnn.h /home/deco/local/cuda-8.0/include
+sudo cp cuda/lib64/libcudnn* /home/deco/local/cuda-8.0/lib64
+
+which -a python
+
+sudo docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
+
+sudo docker run --runtime=nvidia --rm nvidia/cuda nvcc --version
+
+sudo docker ps
+
+sudo docker images
+
+sudo nvidia-docker commit decanlp-container ubuntu-gpu:version2
+
+sudo nvidia-docker commit d6a3a31a8bf9 ubuntu-gpu:version2 
+
+sudo docker image rm 7b9fa6da1648
+
+sudo docker exec -it decanlp-container bash
+
+cd home/projects
+
+python decaNLP/train.py --train_tasks squad --gpus 0 --train_batch_tokens 5000 --val_batch_size 128
+
+pip install --upgrade pip
+
+markdown，想要换行的话，在行末加两个空格
+
+
