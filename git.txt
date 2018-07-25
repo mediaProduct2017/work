@@ -2,7 +2,7 @@ github arfu2016:
 chat_cn 
 origin/master
 
-gitlab deco@cubee.com:
+arfu.guo@gmail.com:
 CubeGirl 
 origin/develop_deco
 origin/deco_MLP_model
