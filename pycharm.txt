@@ -1,0 +1,9 @@
+break points: Run - View Breakpoints
+
+设置断点：在行前单击；再单击取消断点
+
+debug: Run - Debug
+	Console: step over, step into, step into my code, step out
+
+左下角：Run, Debug, Todo
+
