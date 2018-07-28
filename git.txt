@@ -220,3 +220,17 @@ git branch --sort=committerdate  # ASC
 git checkout master_intent_classify
 Branch master_intent_classify set up to track remote branch master_intent_classify from origin.
 Switched to a new branch 'master_intent_classify'
+
+matching（匹配所有分支）
+matching 参数是 Git 1.x 的默认参数，也就是老的执行方式。其意是如果你执行 git push 但没有指定分支，它将 push 所有你本地的分支到远程仓库中对应匹配的分支。
+
+simple（匹配单个分支）
+simple参数是 Git 2.x 默认参数，意思是执行 git push 没有指定分支时，只有当前分支会被 push 到远程仓库。
+
+所以，如果我们想使用matching方式，可以在命令行输入：
+
+git config --global push.default matching
+
+如果我们想使用simple方式，可以在命令行输入：
+
+git config --global push.default simple
