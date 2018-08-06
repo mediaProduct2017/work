@@ -4,3 +4,24 @@ du -h 当前目录所占空间，一般来说包括当前目录下所有文件�
 find . -type f -size +100M
 找到当前目录下大小大于100M的文件
 
+cd - 相当于cd .. 返回父目录
+
+kernel version information:
+
+uname -a
+
+Distribution Information:
+
+cat /etc/lsb-release
+
+Install vim:
+
+To make sure you have the latest sources.list:
+
+sudo apt-get update
+
+then run:
+
+sudo apt-get install vim
+
+
