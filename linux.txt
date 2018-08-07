@@ -24,4 +24,16 @@ then run:
 
 sudo apt-get install vim
 
+从本地向服务器传输文件夹
+
+scp -r tokenizers deco@172.16.1.60:/home/deco/downloads
+ 
+从host向docker container传输文件夹
+
+sudo docker cp tokenizers/. decanlp-container:/root/nltk_data/tokenizers
+
+从host向docker container传输文件
+
+docker cp foo.txt mycontainer:/foo.txt
+
 
