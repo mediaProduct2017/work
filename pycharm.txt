@@ -7,3 +7,8 @@ debug: Run - Debug
 
 左下角：Run, Debug, Todo
 
+How to close the find box?
+esc
+https://intellij-support.jetbrains.com/hc/en-us/community/posts/207051125-How-to-close-the-find-box-
+
+

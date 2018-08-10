@@ -1,0 +1,18 @@
+authentication:
+
+authentication mode: basic (mogodb-cr or scram-sha-1)
+user name:
+password:
+authentication DB: robot_soccer or admin
+
+ssh tunnel:
+
+ssh address: port: 9022
+ssh user name:
+ssh auth mode: private key
+Private key: select the key file
+passphrase: the password the the ssh user name
+
+studio 3t
+robo 3t
+
