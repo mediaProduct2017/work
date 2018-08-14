@@ -11,4 +11,7 @@ How to close the find box?
 esc
 https://intellij-support.jetbrains.com/hc/en-us/community/posts/207051125-How-to-close-the-find-box-
 
+add a magic coding comment at the top of the file
+# coding: cp1252
+
 

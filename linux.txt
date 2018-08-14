@@ -40,4 +40,7 @@ sudo docker cp tokenizers/. decanlp-container:/root/nltk_data/tokenizers
 
 docker cp foo.txt mycontainer:/foo.txt
 
+remove everything in a folder:
+rm ./*
+
 

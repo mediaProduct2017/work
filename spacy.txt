@@ -1,0 +1,20 @@
+下载模型
+https://spacy.io/usage/models
+
+https://spacy.io/models/en#en_core_web_md
+release details就是链接到模型的具体下载地址
+
+
+自动下载安装
+python -m spacy download en_core_web_sm
+python -m spacy download en_core_web_md
+
+直接pip下载安装
+pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.0.0/en_core_web_sm-2.0.0.tar.gz
+
+先下载再安装
+https://github.com/explosion/spacy-models/releases/tag/en_core_web_lg-2.0.0
+可以用wget下载（curl也许也可以用来下载），或者在浏览器下载
+然后用本地文件安装
+pip install /Users/you/en_core_web_md-1.2.0.tar.gz
+
