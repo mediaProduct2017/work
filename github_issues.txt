@@ -1,0 +1,4 @@
+elastic/elasticsearch-py
+elasticsearch.helpers.parallel_bulk() hangs forever on Python 3.7.0
+https://github.com/elastic/elasticsearch-py/issues/816
+
