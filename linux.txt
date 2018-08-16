@@ -43,4 +43,7 @@ docker cp foo.txt mycontainer:/foo.txt
 remove everything in a folder:
 rm ./*
 
+exit 退出linux，常用于退出远程机器，退出虚拟机等
+
+ps a 显示现行终端机下的所有程序，包括其他用户的程序
 

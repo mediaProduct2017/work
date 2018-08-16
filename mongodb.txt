@@ -1,0 +1,31 @@
+1. 安装mongo   
+
+```bash
+	sudo apt-get install mongodb     
+	
+	service mongodb stop  
+	service mongodb start
+```
+
+2. 运行mongo shell
+
+```bash
+	mongo
+```
+
+3. 在mongo shell里运行命令
+```
+use admin
+
+db.createUser({user:"userAdmin",pwd:"Test123456",roles:[{role:"root", db:"admin"}]})
+
+db.createUser({user: "robot_soccer", pwd: "123456", roles: [{role: "readWrite", db: "robot_soccer"}]})
+```
+
+4. 在mongo中要求authenication
+
+打开bash
+
+sudo vim /etc/mongodb.conf  # 配置里改auth = true，大约在22行
+
+
