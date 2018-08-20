@@ -1,0 +1,10 @@
+Arp table may exist in a computer, it may also exist in hubs, switches or routers. Arp table establishes mapping between Ip addresses and Mac addresses of the network adapters in a computer or other aparatus.
+
+Hub is a primitive equipment in the network, now it could be thoroughly replaced by switches and routers. Hub is used for broadcasting, but it does not have a switch table. A switch table contains mapping between Ip address (or Mac address) and port index in a switch or a router.
+
+Switch could be regarded as a default configuration of routers. Switches lay in layer 2, the ethernet layer or LAN (local network). Because it's in layer 2 and has simple configurations, it could run very fast. In switches, the information traffic flows in the unique path which is determined by the spanning tree of the network topoloby. However, in routers, the traffic path is not unique, it could have multiple paths.
+
+Routers lay in layer 3, the IP layer which sends and receives IP protocol. The IP layer is the narrow waist of the network archetecture, and the essential part of the current network. Due to the progress of technology in recent years, the boundary between layer 2 and layer 3 becomes very blurry.
+
+No matter hubs, switches or routers, they must have buffer to store the information due to the traffic jam in the network. Buffer size could be calculated according to some theories.
+
