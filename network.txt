@@ -1,10 +1,29 @@
 Arp table may exist in a computer, it may also exist in hubs, switches or routers. Arp table establishes mapping between Ip addresses and Mac addresses of the network adapters in a computer or other aparatus.
 
-Hub is a primitive equipment in the network, now it could be thoroughly replaced by switches and routers. Hub is used for broadcasting, but it does not have a switch table. A switch table contains mapping between Ip address (or Mac address) and port index in a switch or a router.
+Hub is a primitive equipment in the network, now it could be thoroughly replaced by switches and routers. Hub is used for broadcasting, but it does not have a switch table. A switch table contains mapping between Ip address (or Mac address) and port index in a switch or a router. Switch could replace hub to broadcast.
 
-Switch could be regarded as a default configuration of routers. Switches lay in layer 2, the ethernet layer or LAN (local network). Because it's in layer 2 and has simple configurations, it could run very fast. In switches, the information traffic flows in the unique path which is determined by the spanning tree of the network topoloby. However, in routers, the traffic path is not unique, it could have multiple paths.
+Switches lay in layer 2, the ethernet layer or LAN (local network). Because it's in layer 2 and has simple configurations, it could run very fast. In switches, the information traffic flows in the unique path which is determined by the spanning tree of the network topoloby. However, in routers, the traffic path is not unique, it could have other paths.
 
-Routers lay in layer 3, the IP layer which sends and receives IP protocol. The IP layer is the narrow waist of the network archetecture, and the essential part of the current network. Due to the progress of technology in recent years, the boundary between layer 2 and layer 3 becomes very blurry.
+Switch can be used to build a LAN (local area network). Let's call the communication within a LAN intradomain communication. Switch uses the path of spanning tree to construct the switch table and forward information after the switch table is established. For intradomain communication, this characteristic could make it very fast. However, to link this lAN into the internet, or connect the LAN with many other LANs, we need a router to compute the approapriate path between the source and the target. If we also use switch mechanism in interdomain commincation, it would be very slow.
+
+Routers lay in layer 3, the IP layer which sends and receives IP protocol. The IP layer is the narrow waist of the network archetecture, and the essential part of the current network. As we said, router computes the path for interdomain communication, considering not only the length of the path, but also the money expediture for each choice. For intradomain communication, we can also use router to compute the shortest path between source and target. But for intradomain communication, especially for small local network, the router mechanism is usually slower than the switch mechanism.
+
+Due to the progress of technology in recent years, the boundary between layer 2 and layer 3 becomes very blurry. Before, to connect a LAN with WAN (wide area network), we should have a router with one WAN interface and one LAN interface. The WAN interface connects to the internet, and the LAN interfaced connects to the WAN interface of a switch. The many LAN interfaces of switch connect to many computers in the local network. Nowadays, a switch could also have the function of routing, equivalent with a previous switch plus a previous simple router. A router today could also have many LAN interfaces to act as a switch, though we still need switch when we need many many LAN interfaces.
+
+Switching Basics for Cyber and Network Security
+Network switches are used to connect computers and servers into a single network. The switch performs the function of a controller and allows the devices within a network to communicate with each other. This action is performed through packet switching, where data is received, processed and forwarded to its destination from one computer to another. Information sharing as well as resource allocation through switching allows businesses to save money while improving productivity.
+
+Routing Basics for Cyber and Network Security
+While switches connect computers within a single network, routers are used to connect entire networks to each other. Data packets are received, processed and forwarded from one network to another. Routing allows computers to link through the internet, thus allowing for information sharing between different networking systems.
+
+Difference between Routing and Switching
+Whereas switching creates a single network made up of individual computers, routing connects entire networks to each other. Routers perform a role similar to that of switches, but on a much larger scale. Thus, a router essentially acts as a dispatcher of data through the most efficient channels between networks.
 
 No matter hubs, switches or routers, they must have buffer to store the information due to the traffic jam in the network. Buffer size could be calculated according to some theories.
+
+Network Security Basics
+What does routing and switching have to do with network security? Since information between computers and larger networks is transferred using routers and switches, they become the primary targets for hacking and information leaking. Thus, to ensure network security, it becomes essential to protect routers and switches against outside tampering.
+
+Hijack information stored in switches or routers, information to a switch or router, information from a switch or router.
+
 

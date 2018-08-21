@@ -5,6 +5,10 @@ export LD_LIBRARY_PATH=/home/deco/local/cuda-8.0/lib64${LD_LIBRARY_PATH:+:${LD_L
 
 pip install -r requirements.txt -i https://pypi.mirrors.ustc.edu.cn/simple
 
+pip install --index-url https://pypi.douban.com/simple tensorflow==1.0
+
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ https://mirrors.tuna.tsinghua.edu.cn/tensorflow/linux/gpu/tensorflow_gpu-1.0.0-cp36-cp36m-linux_x86_64.whl
+
 pip install django_modeltranslation==0.4.0-beta2
 
 pip install tensorflow-gpu==1.1 -i https://pypi.mirrors.ustc.edu.cn/simple
