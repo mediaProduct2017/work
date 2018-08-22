@@ -1,10 +1,28 @@
-Arp table may exist in a computer, it may also exist in hubs, switches or routers. Arp table establishes mapping between Ip addresses and Mac addresses of the network adapters in a computer or other aparatus.
+Arp table may exist in a computer, it may also exist in hubs, switches or routers. Arp table establishes mapping between Ip addresses and Mac addresses of the network adapters in a computer or other aparatus. Hubs, switches or routers use arp protocol to construct Arp table.
 
-Hub is a primitive equipment in the network, now it could be thoroughly replaced by switches and routers. Hub is used for broadcasting, but it does not have a switch table. A switch table contains mapping between Ip address (or Mac address) and port index in a switch or a router. Switch could replace hub to broadcast.
+To establish an arp table, the hub or switch needs to broadcast an IP address, and the computer with that IP address will report its mac address to the hub or switch, and it is recorded in the arp table.
+
+Network hacking is all about hijacking and simulation. If we modify an arp table, mapping the router IP address with a fake mac address. Then we can simulate a router with a fake mac address.
+
+Hub is a primitive equipment in the network, now it could be thoroughly replaced by switches and routers. Hub is used for broadcasting, but it does not have a switch table (forwarding table). A switch table contains mapping between Ip address (or Mac address) and port index in a switch or a router. Switch could replace hub to broadcast.
+
+To establish a forwarding table, the switch needs to broadcast an IP address to very port of the switch, the computer with that IP address will report to the corresponding port of that switch. And the switch will record the mapping between the IP address and the port number.
+
+If we modify a forwarding table, we can hijack the packets to a specific IP address to another computer with a fake IP address.
 
 Switches lay in layer 2, the ethernet layer or LAN (local network). Because it's in layer 2 and has simple configurations, it could run very fast. In switches, the information traffic flows in the unique path which is determined by the spanning tree of the network topoloby. However, in routers, the traffic path is not unique, it could have other paths.
 
-Switch can be used to build a LAN (local area network). Let's call the communication within a LAN intradomain communication. Switch uses the path of spanning tree to construct the switch table and forward information after the switch table is established. For intradomain communication, this characteristic could make it very fast. However, to link this lAN into the internet, or connect the LAN with many other LANs, we need a router to compute the approapriate path between the source and the target. If we also use switch mechanism in interdomain commincation, it would be very slow.
+Switch can be used to build a LAN (local area network). Let's call the communication within a LAN intradomain communication. Switch uses the path of spanning tree to construct the switch table and forward information after the switch table is established. For intradomain communication, this characteristic could make it very fast. However, to link this lAN into the internet, or connect the LAN with many other LANs, we need a router to compute the approapriate path between the source and the target. If we also use switch mechanism in interdomain commincation, it would be very slow and impossible to establish the whole internet.
+
+A local network can be built only by a swtich, in this case, the communication in the local network is really fast. A local network can also be constructed by several routers by intradomain communicaton protocols. The local network with routers is usually larger than the local network built by switches.
+
+A routing table is a set of rules, often viewed in table format, that is used to determine where data packets traveling over an Internet Protocol (IP) network will be directed. The Internet routing world consists of many autonomous systems which are interconnected. Each AS consists of multiple routers. eBGP is the version of BGP that is used to exchange BGP routing updates between two different AS’s. eBGP is implemented on the edge BGP router that provides interconnection to other AS’s. 
+
+To establish a routing table is really complex, and the data in the table is dynamic. To compute which path to take to deliver a packet and which router to give the packet to next step, the router needs to know the information of other routers, the distance and speed of each router to a specific IP address. Due to the Ip addresses are dispatched automatically in many areas, the distance and speed of a router to a specific IP address are dynamic.
+
+Router hijacking usually involves broadcasting fake information to routers. For example, actually your router is far from a specific IP address, but your router claims that your router is near it, therefore other routers will forwoard packets to you when the packets are to that IP address. By doing that, you can hijack the whole network.
+
+In a local network, You can claim yourself as a router and competes with other routers in the local network. If there are several routers in the local network, introdomain routing is indispensible. If your succeed in the competion, you can act as a fake router, and get all the packets of the computers which treat you as a router.
 
 Routers lay in layer 3, the IP layer which sends and receives IP protocol. The IP layer is the narrow waist of the network archetecture, and the essential part of the current network. As we said, router computes the path for interdomain communication, considering not only the length of the path, but also the money expediture for each choice. For intradomain communication, we can also use router to compute the shortest path between source and target. But for intradomain communication, especially for small local network, the router mechanism is usually slower than the switch mechanism.
 
@@ -26,4 +44,7 @@ What does routing and switching have to do with network security? Since informat
 
 Hijack information stored in switches or routers, information to a switch or router, information from a switch or router.
 
+Before a request to a server is sent, first it sends a request to a DNS server, and recieves the IP address of that server. Then it sends a frame with that IP address and its own IP address, that is, it sends a request to the target server.
+
+When a computer sends a reqest to another server, it first sends a frame with the target IP address and its own IP address to the switch. If the target IP address is within the local network, the switch will forword the packets to corresponding port and the server. If the target IP address is outside the local network, the switch will send the packets to a nearby router, that router will compute the optimal path for it, and forward the packets to the next proper router, until it gets to destination.
 
