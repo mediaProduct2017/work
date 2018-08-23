@@ -14,5 +14,5 @@ Private key: select the key file
 passphrase: the password the the ssh user name
 
 studio 3t
-robo 3t
+robo 3t (robomongo)
 
