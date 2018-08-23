@@ -1,0 +1,9 @@
+Mysql Workbench
+
+connection method: standard tcp/ip over ssh
+
+ssh password: ssh密匙文件密码
+
+keyfile password: ssh密匙文件密码
+报警问是否继续时选择继续，可以连上的
+
