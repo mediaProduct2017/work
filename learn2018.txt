@@ -13,3 +13,10 @@ https://blog.csdn.net/helunqu2017/article/details/78659490
 vps
 https://www.vultr.com/
 
+谷歌不慎劫持BGM路由，导致日本大范围断网约一个小时
+http://www.sohu.com/a/168006154_257305
+
+Windows上的路由表和路由劫持
+https://blog.csdn.net/u013761036/article/details/72810376
+
+
