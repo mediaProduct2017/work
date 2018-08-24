@@ -234,3 +234,9 @@ git config --global push.default matching
 如果我们想使用simple方式，可以在命令行输入：
 
 git config --global push.default simple
+
+已经加入stage的文件(已经git add)，重新放入working area
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+
