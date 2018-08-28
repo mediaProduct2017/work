@@ -239,4 +239,12 @@ git config --global push.default simple
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
 
+去除最后一个commit（尚未push）
+git reset --soft HEAD~1
+
+从stage中拿出
+git reset HEAD aiball/core/topics/en/competition/competition.fixture.py
+
+从working area中拿出
+git checkout aiball/core/topics/en/competition/competition.fixture.py
 

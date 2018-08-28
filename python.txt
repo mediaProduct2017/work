@@ -1,0 +1,19 @@
+多线程对服务器来说很重要，因为要保证响应
+
+Sequence (__len__, __getitem__; container sequence, flat sequence, container sequence放的是引用, flat sequence放的是具体的值), Collection (Sized, Iterable), Sized (__len__), Iterable (__iter__ or __next__, in, for ... in; reversed,  random.choice), Container (__contains__, in, fast or slow)
+
+container Sized    Collection(Sized, Iterable) Sequence
+		  Iterable
+
+container sequence是sequence, 当然是container, flat sequence是sequence，当然也是container
+
+Iterators contain both __iter__ and __next__ , iterables contain __iter__ or __next__ (It works in for ... in ...)
+
+If the __iter__ returns a generator or an object with __next__() method, it is called iterator. Both iterator and generator are iterable.
+
+set, dict: special __contains__ (in operator, fast algorithm)
+
+list, str, bytes, bytearray: len(), not __len__(), but ob_size attribute
+
+github python disk cache 
+
