@@ -13,6 +13,9 @@ origin/deco_MLP_model
 origin/MLP_model_deco
 origin/parse_tree
 
+origin/worldcup_kg
+origin/master_intent_classify
+
 git clone url
 
 git log
