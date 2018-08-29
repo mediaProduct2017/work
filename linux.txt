@@ -30,7 +30,7 @@ sudo apt-get install vim
 
 从本地向服务器传输文件夹
 
-scp -r tokenizers deco@172.16.1.60:/home/deco/downloads
+scp -r tokenizers user-name@ip:/home/deco/downloads
  
 从host向docker container传输文件夹
 
