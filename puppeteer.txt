@@ -1,0 +1,161 @@
+A SLACK COMMUNITY FOR DEVELOPERS TO DISCUSS WEB SCRAPING
+https://intoli.com/blog/slack-for-web-scrapers/
+
+首先下载node (nodejs)和npm
+
+npm是node程序的管理器，相当于python中的pip或者conda
+
+Puppeteer 至少需要 Node v6.4.0，如要使用 async / await，只有 Node v7.6.0 或更高版本才支持。
+
+英文：
+https://nodejs.org/en/
+
+中文：
+https://nodejs.org/zh-cn/
+
+How to Update Node.js to Latest Version (Linux, Ubuntu, OSX, Others)
+https://www.hostingadvice.com/how-to/update-node-js-latest-version/
+
+首先，下载node
+apt install wget
+apt-get install wget
+wget https://nodejs.org/dist/v6.9.2/node-v6.9.2-linux-x64.tar.xz
+实际地址为从上面的node下载地址中得到的node的最新版本
+
+To unpack the file, you’ll need xz-utils; to install it, run sudo apt-get install xz-utils. Next, use this code to install the binary package in usr/local:
+
+tar -C /usr/local --strip-components 1 -xJf node-v6.9.2-linux.x64.tar.xz
+
+这样的话，就不仅装上了node，也装上了npm
+
+wget https://nodejs.org/dist/v8.11.4/node-v8.11.4-linux-x64.tar.xz
+apt-get install xz-utils
+tar -C /usr/local --strip-components 1 -xJf node-v8.11.4-linux-x64.tar.xz
+
+which -a node
+
+create a symlink
+ln -s `which nodejs` /usr/bin/node
+ln -s /usr/local/bin/node /usr/bin/node
+ln -s /usr/local/bin/npm /usr/bin/npm
+
+这样的话，即使sys.path里只有/usr/bin而没有/usr/local/bin，也可以在shell中直接调用node和npm了。
+
+puppeteer默认是局部安装的，所以要新建一个目录，比如在docker的一台linux机器上新建目录puppeteer_test，然后在这个文件夹中安装puppeteer
+
+npm i puppeteer
+i表示install
+
+可能会出现以下报错:
+ERROR: Failed to download Chromium r515411! Set "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD" env variable to skip download.
+
+是因为在执行安装的过程中需要执行install.js，这里会下载Chromium,官网建议是进行跳过，我们可以执行 —ignore-scripts 忽略这个js执行。也可以通过设置环境变量set PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1阻止下载 Chromium （因为封网，直接下载会失败）
+
+npm i --save puppeteer --ignore-scripts
+
+npm config set registry=http://registry.npm.taobao.org
+
+npm config set puppeteer_download_host=https://storage.googleapis.com.cnpmjs.org
+
+npm config list
+Show all the config settings. Use -l to also show defaults. Use --json to show the settings in json format.
+
+npm config list -l
+
+手动下载Chromium
+下载地址：https://download-chromium.appspot.com/ （需要翻墙）
+如果是linux系统，会自动下载linux版本，比如chrome-linux.zip
+
+在想要安装的地方，解压文件夹，打开文件夹，就可以看到可执行程序chrome
+unzip chrome-linux.zip -d /destination_dir
+
+The action to resolve this (which I'm working on now) is getting a list of all the required dependencies to run Chromium. Straight from the Debian the requirements are below.
+
+gconf-service
+libasound2
+libatk1.0-0
+libc6
+libcairo2
+libcups2
+libdbus-1-3
+libexpat1
+libfontconfig1
+libgcc1
+libgconf-2-4
+libgdk-pixbuf2.0-0
+libglib2.0-0
+libgtk-3-0
+libnspr4
+libpango-1.0-0
+libpangocairo-1.0-0
+libstdc++6
+libx11-6
+libx11-xcb1
+libxcb1
+libxcomposite1
+libxcursor1
+libxdamage1
+libxext6
+libxfixes3
+libxi6
+libxrandr2
+libxrender1
+libxss1
+libxtst6
+ca-certificates
+fonts-liberation
+libappindicator1
+libnss3
+lsb-release
+xdg-utils
+wget
+
+在linux系统中，root用户调用chrome时是不能使用sandbox的，但其他用户可以。据说root用户可以键入以下命令来绕过：
+
+在chrome的文件夹下：
+mv chrome_sandbox chrome-sandbox
+chown root chrome-sandbox
+chmod 4755 chrome-sandbox
+
+但实测没有效果
+
+git config --global user.email 'arfu.guo@gmail.com'
+git config --global user.name 'arfu'
+
+npm uninstall <name> removes the module from node_modules, but not package.json
+
+npm uninstall <name> --save also removes it from dependencies in package.json
+
+npm uninstall puppeteer --no-save
+Package will not be removed from your package.json file.
+
+chrome之前的版本是63，匹配puppeteer 0.12，在安装puppeteer时，需要在同文件夹下的package.json中写入
+
+{
+  "dependencies": {
+    "puppeteer": "^0.12.0"
+  }
+}
+
+然后安装puppeteer，就能得到0.12版本
+
+chrome升级到版本68以后，匹配puppeteer 1.4，但是，在安装puppeteer时，在同文件夹下的package.json中写入
+
+{
+  "dependencies": {
+    "puppeteer": "^1.4.0"
+  }
+}
+
+之后，仍然安装的是最新的puppeteer 1.7，而且，package.json中变成了
+
+{
+  "dependencies": {
+    "puppeteer": "^1.7.0"
+  }
+}
+
+但是，puppeteer 1.7和版本68的chrome是可以一起工作的，正常运行
+
+
+

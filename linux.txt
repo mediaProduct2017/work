@@ -94,3 +94,7 @@ npm config set puppeteer_download_host=https://storage.googleapis.com.cnpmjs.org
 
 unzip chrome-linux.zip -d /destination_dir
 
+
+ls *chrome*
+
+
