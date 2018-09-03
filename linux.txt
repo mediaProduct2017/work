@@ -59,4 +59,38 @@ wget 是下载文件的工具，并不会试图展示下载的文件
 
 curl 是远程模拟浏览器的工具，涉及到两部，首先是下载数据，然后是展示数据
 
+apt install wget
+or
+apt-get install wget
+
+更新安装源
+apt-get update
+
+apt-get install nodejs
+
+apt-get install npm
+
+nodejs -v
+
+npm -v
+
+create a symlink
+ln -s `which nodejs` /usr/bin/node
+ln -s /usr/local/bin/node /usr/bin/node
+ln -s /usr/local/bin/npm /usr/bin/npm
+
+Update npm:
+npm install npm@latest -g
+
+wget https://nodejs.org/dist/v8.11.4/node-v8.11.4-linux-x64.tar.xz
+apt-get install xz-utils
+tar -C /usr/local --strip-components 1 -xJf node-v8.11.4-linux-x64.tar.xz
+
+which -a node
+
+npm config set registry=http://registry.npm.taobao.org
+
+npm config set puppeteer_download_host=https://storage.googleapis.com.cnpmjs.org
+
+unzip chrome-linux.zip -d /destination_dir
 
