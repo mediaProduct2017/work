@@ -1,0 +1,41 @@
+learn_NeuralNet
+
+support vector machine和两层（不包括输入层）的神经网络更像，首先要经历变换，可能是线性变换，也可能是非线性变换，还可能有维度的变换（比如神经网络模型开始是二维，如果hidden nodes有三个的话，二维就变成了三维；svm的维度变换也是一样，所谓的核函数就是用来做这个变换的，可能是线性核函数，也可能是非线性核函数）；其次是分类，神经网络的话，分类的forward function就是logistic function，z的正负决定了最终的分类，在二维坐标（hidden layer是几维，此处就是几维）表现出来的话，就看在直线ax+by+c=0的哪一边，拟合时的objective function用的是上面的函数。svm的话，分类的函数在二维坐标表现出来的话，可能是一条直线，也可能是一条曲线，看点在线的哪一边，拟合时的objective function往往是在高维上实现的一个平面（线性组合），目标往往是离该平面最近的两个点（每个类出一个点，或者不只出一个点，也可能出几个点）到该平面的距离的和最大（the maximum margin can be determined as the minimum summed distance between a hyperplane and the closest points from each class. 实际的函数可能要更复杂），在预测时，一个点离这个平面越远，分到某个类的概率越大，所以预测时svm给出的概率值本质上是距离（如果在某个类的这一侧，距平面越远，是这个类的概率越大，如果在另一侧，距平面越远，是这个类的概率越小）。
+
+ The utility of this margin maximization is that the larger the distance between two classes, lower the generalization error will be for the classification of a new point.
+
+Support Vector Machines
+http://scikit-learn.org/stable/modules/svm.html
+
+The advantages of support vector machines are:
+
+Effective in high dimensional spaces.
+Still effective in cases where number of dimensions is greater than the number of samples.
+Uses a subset of training points in the decision function (called support vectors), so it is also memory efficient.
+Versatile: different Kernel functions can be specified for the decision function. Common kernels are provided, but it is also possible to specify custom kernels.
+
+
+The disadvantages of support vector machines include:
+
+If the number of features is much greater than the number of samples, avoid over-fitting in choosing Kernel functions and regularization term is crucial.
+SVMs do not directly provide probability estimates, these are calculated using an expensive five-fold cross-validation (see Scores and probabilities, below).
+
+This means svm is a non-probabilistic binary linear classifier.
+
+When the number of samples are small, svm could be more effective than neural network. And because svm could be nonlinear classifier, it may be better than logistic regression and softmax regression in nonlinear situations.
+
+当样本逐渐增多后，svm的表现逐渐被neural net，特别是被deep learning所超越。
+
+It is widely used in industrial systems, text classifications, pattern recognition, biological ML applications, etc.
+
+https://towardsdatascience.com/how-the-good-old-sorting-algorithm-helps-a-great-machine-learning-technique-9e744020254b
+
+SVM classifier is nothing but the linear separator that bisects the line joining these convex hulls exactly mid-point. Now say we compute the convex hulls of the data in each of our two classes. We follow this up by determining the shortest line between any two positions along the convex hulls and drawing the line perpendicular to them.
+
+http://www.bic.mni.mcgill.ca/users/lau/comp644/convexhull.htm
+
+Therefore, determining the SVM classifier reduces to the problem of finding the convex hull of a set of points.
+
+在确定convex hull的过程中，先找到y coordinate最小的点，然后对其他的点进行排序，根据角度的不同进行排序。排序的时间复杂度决定了整个算法的时间复杂度。
+
+
