@@ -48,3 +48,11 @@ Before a request to a server is sent, first it sends a request to a DNS server, 
 
 When a computer sends a reqest to another server, it first sends a frame with the target IP address and its own IP address to the switch. If the target IP address is within the local network, the switch will forword the packets to corresponding port and the server. If the target IP address is outside the local network, the switch will send the packets to a nearby router, that router will compute the optimal path for it, and forward the packets to the next proper router, until it gets to destination.
 
+
+对于客户端和服务器端的通信，同步意味着客户端需要等着，异步意味着客户端不需要等。同步情况下，阻塞意味着服务器端单线程需要等着，不能接受其他任务，非阻塞意味着服务器端单线程不需要等，也可以暂停掉当前任务，接受其他任务。
+
+对于主线程和子线程，同步意味着主线程需要等着，也意味着主线程被阻塞，异步意味着主线程不需要等，可以继续执行，也意味着主线程没有被阻塞。
+
+对于调用函数和被调用函数，同步意味着调用函数需要等着，也意味着调用函数被阻塞，异步意味着调用函数不需要等，可以继续执行，也意味这调用函数没有被阻塞。
+
+

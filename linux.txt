@@ -97,4 +97,8 @@ unzip chrome-linux.zip -d /destination_dir
 
 ls *chrome*
 
+ping example.com 检测dns和ip地址能不能连上
+
+nmap -p 80 example.com 检测80端口有没有开放
+
 
