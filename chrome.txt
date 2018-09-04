@@ -1,0 +1,3 @@
+chrome://restart
+chrome://version
+chrome://settings

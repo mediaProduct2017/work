@@ -1,1 +1,12 @@
+mac python
+/anaconda/bin/python: 
+pip install appscript 
+这个package在osx操作系统是非常必要，用来和mac的软件互动，比如利用numbers操作.numbers文件
+
+trading:
+pip install tushare -i https://pypi.mirrors.ustc.edu.cn/simple
+pip install beautifulsoup4 -i https://pypi.mirrors.ustc.edu.cn/simple
+
 新建finder窗口的大小决定了finder窗口的默认大小
+
+输入法选中美国国旗，按command+空格就能实现英文和搜狗拼音的相互切换

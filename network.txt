@@ -44,7 +44,11 @@ What does routing and switching have to do with network security? Since informat
 
 Hijack information stored in switches or routers, information to a switch or router, information from a switch or router.
 
-Before a request to a server is sent, first it sends a request to a DNS server, and recieves the IP address of that server. Then it sends a frame with that IP address and its own IP address, that is, it sends a request to the target server.
+Before a request to a server is sent, first it sends a request to a DNS server, and receives the IP address of that server. Then it sends a frame with that IP address and its own IP address, that is, it sends a request to the target server.
 
-When a computer sends a reqest to another server, it first sends a frame with the target IP address and its own IP address to the switch. If the target IP address is within the local network, the switch will forword the packets to corresponding port and the server. If the target IP address is outside the local network, the switch will send the packets to a nearby router, that router will compute the optimal path for it, and forward the packets to the next proper router, until it gets to destination.
+When a computer sends a request to another server, it first sends a frame with the target IP address and its own IP address to the switch. If the target IP address is within the local network, the switch will forward the packets to corresponding port and the server. If the target IP address is outside the local network, the switch will send the packets to a nearby router, that router will compute the optimal path for it, and forward the packets to the next proper router, until it gets to destination.
+
+在一台机器上装虚拟机的话，可以共用ip地址，但使用不同的端口，也可以使用不同的ip地址（比如局域网的不同ip，简单说，主机和虚拟机就可以构成一个局域网），但是本质上，还是主机作为路由器，packet首先发给主机，然后路由中有一个switch table，表明哪个端口对应着哪个ip，把packet转发到不同端口去，其实还是相同的ip，不同的端口。
+
+同一台机器上一个线程的程序的不同部分是如何进行通讯的，不需要程序员来管。如果是多线程（包括多进程），通讯就需要程序员来管了。如果是多台机器配合着完成一个程序，不同机器之间的通讯（网络通讯）也需要程序员来管。
 

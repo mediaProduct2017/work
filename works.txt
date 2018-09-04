@@ -12,3 +12,34 @@
 data preprocess: learn-process/data_preprocessing.ipynb
 
 https://github.com/arfu2016/learn-process/blob/master/data_preprocessing.ipynb
+
+决策树用于回归和分类（变成自己的编程风格）
+
+神经网络模型用于回归和分类
+
+词向量、cnn与rnn用于句向量和句子相似度评估
+
+question, context and answer；搜索的应用
+
+爬虫用于微博的足球信息分析
+
+强化学习用于博弈
+
+gan的应用
+
+
+type hint
+
+arg parse
+
+后端服务与架构
+
+数据查询
+
+多线程与多进程
+
+多机通讯
+
+python高级功能
+
+网络通信

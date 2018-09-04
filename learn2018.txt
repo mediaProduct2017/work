@@ -19,4 +19,17 @@ http://www.sohu.com/a/168006154_257305
 Windows上的路由表和路由劫持
 https://blog.csdn.net/u013761036/article/details/72810376
 
+用tushare获取股票历史数据
+https://blog.csdn.net/m0_37430356/article/details/77922386
+
+如何下载股票历史数据？
+https://www.zhihu.com/question/22145919
+
+Wind开放应用接口
+http://www.dajiangzhang.com/document
+
+使用Python从Wind量化接口下载全部A股股票历史行情数据
+https://www.cnblogs.com/dion-90/articles/8586556.html
+
+
 

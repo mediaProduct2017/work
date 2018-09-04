@@ -87,4 +87,6 @@ pip install --upgrade pip
 
 markdown，想要换行的话，在行末加两个空格
 
+pip install beautifulsoup4  -i https://pypi.mirrors.ustc.edu.cn/simple
+
 
