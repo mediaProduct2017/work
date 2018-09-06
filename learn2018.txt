@@ -46,3 +46,5 @@ https://www.jianshu.com/p/9165c80975e2
 详解Node使用Puppeteer完成一次复杂的爬虫
 https://www.jb51.net/article/138391.htm
 
+如何利用 Puppeteer 爬取数据？（5）-- 微博登录
+http://www.vccoo.com/v/se124p_5
