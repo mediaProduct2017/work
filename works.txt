@@ -1,12 +1,24 @@
 1. mediaProduct2017/f_media/
 
+金融信息，基本面数据分析及数据可视化
+
 2. arfu2016/DuReader/work2/
+
+在数据比较少的时候，构建句向量的几种方法
 
 3. arfu2016/DuReader/work3/
 
 4. arfu2016/DuReader/work4/
 
 5. arfu2016/Imylu/work5
+
+6. arfu2016/Imylu/work6
+
+7. arfu2016/Imylu/work7
+
+8. arfu2016/Imylu/work8
+
+自然语言通过句法分析匹配转为sparql查询语句
 
 
 data preprocess: learn-process/data_preprocessing.ipynb
