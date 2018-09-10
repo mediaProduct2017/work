@@ -8,7 +8,11 @@
 
 3. arfu2016/DuReader/work3/
 
+机器阅读理解的几种算法
+
 4. arfu2016/DuReader/work4/
+
+爬虫技术、搜索技术和文本相似度技术用于网络文本数据的挖掘和知识图谱的自动构建
 
 5. arfu2016/Imylu/work5
 
