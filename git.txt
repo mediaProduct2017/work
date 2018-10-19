@@ -220,6 +220,7 @@ git push -u origin master
 git branch --sort=-committerdate  # DESC
 git branch --sort=committerdate  # ASC
 
+master_intent_classify本地没有，但远程仓库有，可以通过checkout直接下载master_intent_classify分支
 git checkout master_intent_classify
 Branch master_intent_classify set up to track remote branch master_intent_classify from origin.
 Switched to a new branch 'master_intent_classify'
@@ -250,4 +251,21 @@ git reset HEAD aiball/core/topics/en/competition/competition.fixture.py
 
 从working area中拿出
 git checkout aiball/core/topics/en/competition/competition.fixture.py
+
+git stash
+暂时放入栈中
+
+git stash list
+查看栈中的东西
+
+git stash pop
+把栈中的东西拿出来
+
+git rebase -i HEAD~2
+合并之前的两个提交
+
+将第二个pick改成squash或者s，然后保存退出。
+此时git会自动将第二个提交合并到第一个提交，并弹出合并提示信息
+如果需要，修改下提交信息，如果不需要直接保存退出即可。
+此时我们已经完成了将两个提交合并为一个的处理，可以通过git log查看
 

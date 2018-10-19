@@ -48,3 +48,83 @@ https://www.jb51.net/article/138391.htm
 
 如何利用 Puppeteer 爬取数据？（5）-- 微博登录
 http://www.vccoo.com/v/se124p_5
+
+如何理解Apache License, Version 2.0（整理）
+https://www.cnblogs.com/Renyi-Fan/p/8148658.html
+
+Dialogue State Tracker
+https://rasa.com/docs/core/api/tracker/
+
+RasaHQ/rasa_core
+https://github.com/RasaHQ/rasa_core
+
+Python's Instance, Class, and Static Methods 
+https://realpython.com/instance-class-and-static-methods-demystified/
+
+java中什么时候使用this
+https://blog.csdn.net/buzishuoquoto/article/details/80955695
+
+Java实例变量和类变量
+https://blog.csdn.net/itmyhome1990/article/details/77833010
+
+java中接口的定义和接口的实现
+https://www.cnblogs.com/kuangwong/p/6235565.html
+
+java 接口与实现类是怎么关联起来的？
+https://zhidao.baidu.com/question/473996428.html
+
+JAVA - 类名、接口名、文件名
+https://blog.csdn.net/bupa900318/article/details/80659977
+
+Java中List和ArrayList的区别
+https://www.cnblogs.com/zcscnn/p/7743507.html
+
+Python - python里有类似Java的接口(interface)吗？
+https://www.cnblogs.com/allen2333/p/9092580.html
+
+java for (String string:str)
+https://zhidao.baidu.com/question/72790077.html
+
+《实体关系抽取研究综述》
+https://www.jianshu.com/p/85c2a78eb876
+
+实体关系抽取 entity relation extraction 文献阅读总结
+https://www.cnblogs.com/theodoric008/p/7874373.html
+
+一条图图犬
+https://www.cnblogs.com/theodoric008/
+
+Overcoming Limited Supervision in Relation Extraction
+https://zhuanlan.zhihu.com/p/32364723
+
+Distant Supervision for Relation Extraction with Sentence-Level Attention and Entity Descriptions
+https://zhuanlan.zhihu.com/p/35051652
+
+Learning with Noise: Enhance Distantly Supervised Relation Extraction with Dynamic Transition Matrix
+https://zhuanlan.zhihu.com/p/36527644
+
+Effectively Combining RNN and CNN for Relation Classification and Extraction
+https://zhuanlan.zhihu.com/p/35845948
+
+CIPS青工委学术专栏第3期 | 基于深度学习的关系抽取
+http://www.cipsc.org.cn/qngw/?p=890
+
+西土城的搬砖日常
+https://zhuanlan.zhihu.com/xitucheng10
+
+CPU的核心数与主频哪个更决定速度
+https://zhidao.baidu.com/question/174402309.html
+
+ETH-DS3Lab at SemEval-2018 Task 7: Effectively Combining Recurrent and Convolutional Neural Networks for Relation Classification and Extraction
+https://www.arxiv-vanity.com/papers/1804.02042/
+
+五种开源协议的比较(BSD，Apache，GPL，LGPL，MIT)
+http://www.ha97.com/833.html
+
+如何理解Apache License, Version 2.0（整理）
+https://www.cnblogs.com/Renyi-Fan/p/8148658.html
+
+git合并多个提交
+https://www.cnblogs.com/tocy/p/git-rebase-merge-commit.html
+
+
