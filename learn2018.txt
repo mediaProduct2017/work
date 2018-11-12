@@ -48,3 +48,118 @@ https://www.jb51.net/article/138391.htm
 
 如何利用 Puppeteer 爬取数据？（5）-- 微博登录
 http://www.vccoo.com/v/se124p_5
+
+谷歌学术搜索(google scholar)
+http://ac.scmor.com/
+http://dir.scmor.com/google/
+
+谷歌学术搜索(google scholar)一直可用
+http://blog.sciencenet.cn/blog-280034-1082366.html
+
+process on石墨注册文档的流程图
+https://www.processon.com/view/59717c78e4b0ac27586e6e42
+
+The groups() method in regular expressions in Python
+https://stackoverflow.com/questions/20202365/the-groups-method-in-regular-expressions-in-python
+
+[python] @abc.abstractmethod
+https://blog.csdn.net/luoluo0114/article/details/79597133
+
+并发高效 python 根本不是 c对手
+https://bbs.csdn.net/topics/390938208
+
+Embedding/Chinese-Word-Vectors
+https://github.com/Embedding/Chinese-Word-Vectors
+
+Chinese Word Vectors：目前最全的中文预训练词向量集合
+https://www.jiqizhixin.com/articles/2018-05-15-10
+
+Java抽象类与接口的区别
+http://www.importnew.com/12399.html
+
+pycharm从第一个断点跳转至第二个断点
+https://blog.csdn.net/wangkun1340378/article/details/80415705
+
+How to exclude cucumber tags
+https://stackoverflow.com/questions/28408962/how-to-exclude-cucumber-tags
+
+Java: Decorator
+https://refactoring.guru/design-patterns/decorator/java/example
+
+Java annotations
+https://www.theserverside.com/definition/Java-annotations
+
+Java annotation
+https://en.wikipedia.org/wiki/Java_annotation
+
+@override annotation
+https://stackoverflow.com/questions/5506373/override-annotation
+
+Java反射 - 1(得到类对象的几种方法，调用方法，得到包下的所有类)
+https://www.cnblogs.com/simiie/p/6081751.html
+
+利用java反射来查找某个包下的所有类,并得到class取得实例
+http://lushuifa.iteye.com/blog/1972847
+
+【Java】利用反射获取class中的所有方法
+https://segmentfault.com/a/1190000011514547?utm_source=tag-newest
+
+java反射(二)：获取Class类的四种方式
+https://blog.csdn.net/a137151062/article/details/43973033
+
+如何选择开源许可证？
+http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html
+
+自然语言处理-Stanford中文实体识别
+https://blog.csdn.net/yaoyaoyao2/article/details/71723965
+
+使用Standford coreNLP进行中文命名实体识别
+https://www.cnblogs.com/sonofelice/p/8677001.html
+
+对crf++的template的理解 ©seven_clear
+https://www.cnblogs.com/littleseven/p/6481315.html
+
+如何用简单易懂的例子解释条件随机场（CRF）模型？它和HMM有什么区别？
+https://blog.csdn.net/QFire/article/details/81065256
+
+How to train sentence/paragraph/document embeddings?
+https://stats.stackexchange.com/questions/286579/how-to-train-sentence-paragraph-document-embeddings
+
+Has the reported state-of-the-art performance of using paragraph vectors for sentiment analysis been replicated?
+https://stats.stackexchange.com/questions/123562/has-the-reported-state-of-the-art-performance-of-using-paragraph-vectors-for-sen
+
+How to find semantic similarity between two documents?
+https://www.researchgate.net/post/How_to_find_semantic_similarity_between_two_documents
+
+amueller/scipy_2015_sklearn_tutorial
+https://github.com/amueller/scipy_2015_sklearn_tutorial/blob/master/notebooks/03.4%20Methods%20-%20Text%20Feature%20Extraction.ipynb
+
+Topic Modeling for Fun and Profit
+https://radimrehurek.com/topic_modeling_tutorial/2%20-%20Topic%20Modeling.html
+
+TF-IDF原理及使用
+https://blog.csdn.net/zrc199021/article/details/53728499
+
+How to find semantic similarity between two documents?
+https://www.researchgate.net/post/How_to_find_semantic_similarity_between_two_documents
+
+Text Feature Extraction with Bag-of-Words
+https://github.com/amueller/scipy_2015_sklearn_tutorial/blob/master/notebooks/03.4%20Methods%20-%20Text%20Feature%20Extraction.ipynb
+
+Lyndon White
+https://stats.stackexchange.com/users/36769/lyndon-white
+
+Topic Modeling for Fun and Profit
+https://radimrehurek.com/topic_modeling_tutorial/2%20-%20Topic%20Modeling.html
+
+What does .class mean in Java?
+https://stackoverflow.com/questions/15078935/what-does-class-mean-in-java
+
+NLP 自然语言处理 集束搜索beam search和贪心搜索greedy search
+https://blog.csdn.net/qq_16234613/article/details/83012046
+
+数学之美：维特比和维特比算法
+https://blog.csdn.net/qq_16234613/article/details/82835641
+
+正则表达式贪婪与非贪婪模式
+https://www.cnblogs.com/xudong-bupt/p/3586889.html
