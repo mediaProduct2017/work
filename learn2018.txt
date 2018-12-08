@@ -242,3 +242,6 @@ https://www.cnblogs.com/Renyi-Fan/p/8148658.html
 git合并多个提交
 https://www.cnblogs.com/tocy/p/git-rebase-merge-commit.html
 
+alphalens.performance.factor_rank_autocorrelation
+https://quantopian.github.io/alphalens/alphalens.html?highlight=factor_rank_autocorrelation#alphalens.performance.factor_rank_autocorrelation
+
