@@ -127,4 +127,75 @@ https://www.cnblogs.com/Renyi-Fan/p/8148658.html
 git合并多个提交
 https://www.cnblogs.com/tocy/p/git-rebase-merge-commit.html
 
+CRF++源码解读
+https://blog.csdn.net/aws3217150/article/details/69212445
+
+custom feature function with (python) crfsuite
+https://stackoverflow.com/questions/40263252/custom-feature-function-with-python-crfsuite
+
+How can I implement a CRF feature function?
+https://stats.stackexchange.com/questions/247982/how-can-i-implement-a-crf-feature-function
+
+Can anybody tell how CRF feature function be generated according to the given template?
+https://stackoverflow.com/questions/45023236/can-anybody-tell-how-crf-feature-function-be-generated-according-to-the-given-te
+
+广义线性混合模型
+https://blog.csdn.net/piaoyu94/article/details/78342452
+
+广义线性模型
+广义线性混合模型
+高斯混合模型
+https://baike.baidu.com/item/%E9%AB%98%E6%96%AF%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B/8878468?fr=aladdin
+
+Mixture model
+https://en.wikipedia.org/wiki/Mixture_model
+
+Gaussian mixture models
+http://scikit-learn.org/stable/modules/mixture.html
+
+Difference between paragraph2vec and doc2vec
+https://datascience.stackexchange.com/questions/17140/difference-between-paragraph2vec-and-doc2vec
+
+Doc2vec tutorial
+https://rare-technologies.com/doc2vec-tutorial/
+
+How to make a template file of CRF++?
+https://stackoverflow.com/questions/25477896/how-to-make-a-template-file-of-crf
+
+template file: unigram
+https://github.com/taku910/crfpp/issues/28
+
+CRF++: Yet Another CRF toolkit
+https://taku910.github.io/crfpp/#templ
+
+使用maven来管理java项目
+https://www.cnblogs.com/tzyy/p/4768859.html
+
+Lucene：基于Java的全文检索引擎简介
+https://www.chedong.com/tech/lucene.html
+
+命名实体识别研究综述
+
+生物医学命名实体识别研究现状及中文生物医学命名实体识别难点与意义综述
+
+Java Program To Remove All White Spaces from A String
+https://javaconceptoftheday.com/java-program-to-remove-all-white-spaces-from-a-string/
+
+Markdown笔记：如何画流程图
+https://segmentfault.com/a/1190000006247465
+
+在简书上用Markdown画流程图
+https://www.jianshu.com/p/89c939b80d72
+
+如何在Markdown中画流程图
+https://www.jianshu.com/p/b421cc723da5
+
+Gradle 打包jar的几种方式
+https://www.jianshu.com/p/5bb1e87df15f
+
+Introduction to Java Serialization
+https://www.baeldung.com/java-serialization
+
+Java - Serialization
+https://www.tutorialspoint.com/java/java_serialization.htm
 

@@ -3,6 +3,8 @@ du -h 当前目录所占空间，一般来说包括当前目录下所有文件�
 
 top 看内存情况
 
+lscpu 看cpu情况
+
 nvidia-smi 看nvidia显卡情况
 
 find . -type f -size +100M
