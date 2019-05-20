@@ -30,7 +30,7 @@ It is widely used in industrial systems, text classifications, pattern recogniti
 
 https://towardsdatascience.com/how-the-good-old-sorting-algorithm-helps-a-great-machine-learning-technique-9e744020254b
 
-SVM classifier is nothing but the linear separator that bisects the line joining these convex hulls exactly mid-point. Now say we compute the convex hulls of the data in each of our two classes. We follow this up by determining the shortest line between any two positions along the convex hulls and drawing the line perpendicular to them.
+SVM classifier is nothing but the linear separator (在高维空间必然是一个线性的分界面，但是映射到低维空间之后，分界线有可能不是线性的) that bisects the line joining these convex hulls exactly mid-point. Now say we compute the convex hulls of the data in each of our two classes. We follow this up by determining the shortest line between any two positions along the convex hulls and drawing the line perpendicular to them.
 
 http://www.bic.mni.mcgill.ca/users/lau/comp644/convexhull.htm
 
