@@ -209,6 +209,10 @@ but you can't undo change to ignored files.
 
 git checkout --track origin/release
 
+git branch -a
+
+git checkout release
+
 
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
