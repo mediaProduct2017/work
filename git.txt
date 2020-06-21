@@ -1,6 +1,14 @@
+在host文件中加入（2020年6月以后不推荐）：
 192.30.253.112 github.com
 151.101.184.133 assets-cdn.github.com
 151.101.185.194 github.global.ssl.fastly.net
+
+用vi打开host文件：
+sudo vi /etc/hosts
+输入i，进入insert模式
+修改完以后（#为注释）
+按esc，然后输入：，如果要保存后退出，输入wq，如果直接退出，输入q
+https://www.jianshu.com/p/1af83ab3ac22
 
 github arfu2016:
 chat_cn 
