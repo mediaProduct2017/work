@@ -215,7 +215,14 @@ You can remove ignored and untracked files and directories
 git clean -fdx
 but you can't undo change to ignored files.
 
+# 当远端有某个分支而本地没有，本地又想转到那个分支上的时候：
 git checkout --track origin/release
+
+git checkout --track remotes/origin/release
+
+git branch -a
+
+git checkout release
 
 
 Changes to be committed:

@@ -1,7 +1,13 @@
 df -h 系统磁盘使用情况
 du -h 当前目录所占空间，一般来说包括当前目录下所有文件夹的大小
 
+du -h -d1 只查看一级目录统计的空间占用
+
+du -sh directory 查看当前目录下directory文件夹的大小
+
 top 看内存情况
+
+lscpu 看cpu情况
 
 nvidia-smi 看nvidia显卡情况
 
@@ -45,7 +51,25 @@ rm ./*
 
 exit 退出linux，常用于退出远程机器，退出虚拟机等
 
+nohup python nohup_demo.py 通过nohup让程序长时间运行，ctrl + c只会影响显示，不会影响真正的进程
+
+nohup python nohup_demo.py & 一开始就在后台运行，同一个terminal还可以操作其他命令
+
+ps -a 作用有限，只能展示少量进程
+
 ps a 显示现行终端机下的所有程序，包括其他用户的程序
+
+ps -ef 最全的展示进程的命令
+
+ps -ef | grep python 列出所有python进程
+
+kill -9 pid 杀掉某个进程
+
+在linux下运行server的时候，需要注意base_dir的设置，比如，对于python，在引用自己写的包的时候，一般采用绝对路径，这在pycharm中是可以识别的。但是，在linux服务器中，系统并不知道base_dir是什么地方，有几种处理办法：
+
+第一，在server.py的脚本处，加入sys.path.append(os.path.dirname(os.path.abspath(__file__))之类的语句，把base_dir加到系统目录当中
+
+第二，在linux中设置，一种是绝对设置，把base_dir的位置放在PATH环境变量中，另一种是相对设置，把当前目录放在PATH环境变量中，然后进到base_dir所在目录，在该目录下运行server脚本。
 
 在linux系统下把多个终端合并在一个窗口(比如，要在一台机器上开多个服务器，最好把这多个终端合并成一个窗口)
 
