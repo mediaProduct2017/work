@@ -224,6 +224,14 @@ git branch -a
 
 git checkout release
 
+# 也可以先把branch信息拉下来，然后做checkout  
+# 在任意一个分支下，运行  
+git pull
+
+git branch -a
+
+git checkout release
+
 
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
